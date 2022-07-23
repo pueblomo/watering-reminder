@@ -16,6 +16,7 @@ import {useForm, zodResolver} from "@mantine/form";
 import {Dropzone, DropzoneStatus, IMAGE_MIME_TYPE} from "@mantine/dropzone";
 import {Icon as TablerIcon, Photo, Upload, X} from "tabler-icons-react";
 import {useState} from "react";
+import {backendUrl} from "../../global";
 
 interface modalProps {
     opened: boolean,
@@ -111,7 +112,7 @@ export default function PlantModal({opened, onClose, plant, onSubmit}: modalProp
         } else {
             return (
                 <Center>
-                    <img width={130} src={"http://localhost:8080/images/" + plant.imageName}/>
+                    <img width={130} src={backendUrl + '/images' + plant.imageName}/>
                 </Center>
             )
         }

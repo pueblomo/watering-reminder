@@ -7,6 +7,7 @@ import classes from "./description-page.module.css"
 import {Plant} from "../models/Plant";
 import PlantModal from "../components/plant-modal";
 import useAxios from "axios-hooks";
+import {backendUrl} from "../../global";
 
 interface descriptionProps {
     plant: Plant,
@@ -22,7 +23,7 @@ export default function DescriptionPage({plant, click, refetch, showDescription}
         executePut
     ] = useAxios(
         {
-            url: 'http://localhost:8080/plant',
+            url: backendUrl + '/plant',
             method: 'PUT'
         },
         {manual: true}

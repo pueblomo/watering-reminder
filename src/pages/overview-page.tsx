@@ -8,12 +8,13 @@ import PlantModal from "../components/plant-modal";
 import classes from "./overview-page.module.css";
 import {CirclePlus} from "tabler-icons-react";
 import {useParams} from "react-router-dom";
+import {backendUrl} from "../../global";
 
 
 export default function OverviewPage() {
     const {user} = useParams()
     const [{data, loading, error}, refetch] = useAxios({
-        url: 'http://localhost:8080/plant',
+        url: backendUrl + '/plant',
         method: 'GET',
         params: {
             user: user
@@ -24,7 +25,7 @@ export default function OverviewPage() {
         executePost
     ] = useAxios(
         {
-            url: 'http://localhost:8080/plant',
+            url: backendUrl + '/plant',
             method: 'POST',
         },
         {manual: true}
