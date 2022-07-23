@@ -17,6 +17,7 @@ import {Dropzone, DropzoneStatus, IMAGE_MIME_TYPE} from "@mantine/dropzone";
 import {Icon as TablerIcon, Photo, Upload, X} from "tabler-icons-react";
 import {useState} from "react";
 import {backendUrl} from "../global";
+import Resizer from "react-image-file-resizer";
 
 interface modalProps {
     opened: boolean,
@@ -177,7 +178,23 @@ export default function PlantModal({opened, onClose, plant, onSubmit}: modalProp
                     />
                     {showImage()}
                     <Dropzone onDrop={async (files) => {
-                        setFile(files[0])
+                        try {
+                            Resizer.imageFileResizer(
+                                files[0],
+                                300,
+                                300,
+                                "JPEG",
+                                100,
+                                0,
+                                (dataURI) => {
+                                    // @ts-ignore
+                                    setFile(dataURI);
+                                },
+                                "file"
+                            );
+                        } catch (err) {
+                            console.log(err);
+                        }
                     }}
                               onReject={(files) => console.log('rejected files', files)}
                               accept={IMAGE_MIME_TYPE}>
