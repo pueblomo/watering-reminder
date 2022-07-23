@@ -7,6 +7,7 @@ import {Bucket} from "tabler-icons-react";
 import useAxios from "axios-hooks";
 import moment from "moment";
 import 'moment/locale/de'
+import {backendUrl} from "../../../global";
 
 interface plantCardProps {
     plant: Plant,
@@ -15,13 +16,13 @@ interface plantCardProps {
 }
 
 export default function PlantCard({plant, click, reload}: plantCardProps) {
-    const imageUrl = "http://localhost:8080/images/" + plant.imageName
+    const imageUrl = backendUrl + '/images/' + plant.imageName
     const [
         {data: putData, loading: putLoading, error: putError},
         executePut
     ] = useAxios(
         {
-            url: 'http://localhost:8080/plant',
+            url: backendUrl + '/plant',
             method: 'PUT'
         },
         {manual: true}

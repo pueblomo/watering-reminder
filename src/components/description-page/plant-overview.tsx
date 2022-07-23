@@ -3,9 +3,10 @@ import {Center, Grid, Image, Paper, Text} from "@mantine/core";
 import classes from './plant-overview.module.css'
 import {Plant} from "../../models/Plant";
 import BadgesDisplay from "../badges-display";
+import {backendUrl} from "../../../global";
 
 export default function PlantOverview(props: Plant) {
-    const imageUrl = "http://localhost:8080/images/" + props.imageName
+    const imageUrl = backendUrl + '/images/' + props.imageName
     return (
         <Paper withBorder shadow="md" radius="md" p="lg" className={classes.container}>
             <Grid>
