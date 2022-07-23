@@ -3,7 +3,7 @@ import {Center, Grid, Image, Paper, Text} from "@mantine/core";
 import classes from './plant-overview.module.css'
 import {Plant} from "../../models/Plant";
 import BadgesDisplay from "../badges-display";
-import {backendUrl} from "../../../global";
+import {backendUrl} from "../../global";
 
 export default function PlantOverview(props: Plant) {
     const imageUrl = backendUrl + '/images/' + props.imageName

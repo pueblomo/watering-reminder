@@ -16,7 +16,7 @@ import {useForm, zodResolver} from "@mantine/form";
 import {Dropzone, DropzoneStatus, IMAGE_MIME_TYPE} from "@mantine/dropzone";
 import {Icon as TablerIcon, Photo, Upload, X} from "tabler-icons-react";
 import {useState} from "react";
-import {backendUrl} from "../../global";
+import {backendUrl} from "../global";
 
 interface modalProps {
     opened: boolean,

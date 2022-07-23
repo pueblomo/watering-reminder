@@ -7,7 +7,7 @@ import {Bucket} from "tabler-icons-react";
 import useAxios from "axios-hooks";
 import moment from "moment";
 import 'moment/locale/de'
-import {backendUrl} from "../../../global";
+import {backendUrl} from "../../global";
 
 interface plantCardProps {
     plant: Plant,
