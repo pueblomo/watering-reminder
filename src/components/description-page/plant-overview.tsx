@@ -17,7 +17,7 @@ export default function PlantOverview(props: Plant) {
                 </Grid.Col>
                 <Grid.Col span={5}>
                     <Center>
-                        <Image width={130} fit="cover" radius="lg" src={imageUrl}/>
+                        <Image width={130} height={130} fit="cover" radius="lg" src={imageUrl}/>
                     </Center>
                 </Grid.Col>
             </Grid>
