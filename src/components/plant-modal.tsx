@@ -181,10 +181,10 @@ export default function PlantModal({opened, onClose, plant, onSubmit}: modalProp
                         try {
                             Resizer.imageFileResizer(
                                 files[0],
-                                300,
-                                300,
+                                130,
+                                130,
                                 "JPEG",
-                                100,
+                                70,
                                 0,
                                 (dataURI) => {
                                     // @ts-ignore
