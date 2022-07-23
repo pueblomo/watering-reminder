@@ -1,7 +1,7 @@
 FROM node:14 AS builder
 WORKDIR /app
 COPY . .
-RUN npm install && npm update && npm run build
+RUN npm install && npm run build
 
 FROM nginx:alpine
 COPY --from=builder /app/build /bin/www
