@@ -1,0 +1,123 @@
+{
+  "name": "plant mock",
+  "request": {
+    "url": "/plant",
+    "method": "GET"
+  },
+  "responses": {
+    "ok": {
+      "status": 200,
+      "default": true,
+      "data": [
+        {
+          "id": "1",
+          "alias": "Herbert Kunibart",
+          "name": "Monstera",
+          "infos": "  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n                            invidunt\n                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo\n                            duo\n                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum\n                            dolor\n                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod\n                            tempor\n                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam\n                            et\n                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem\n                            ipsum dolor sit amet.",
+          "lightBadge": "Halbschatten",
+          "lightDescription": "Diese schöne Pflanze sollte im halbschatten stehen",
+          "waterBadge": "Erde nass",
+          "waterDescription": "Die Erde sollte ganz gut nass sein, glaub mir",
+          "moistBadge": "Feucht",
+          "moistDescription": "Halt deine Wohnung feucht"
+        },
+        {
+          "id": "2",
+          "alias": "Herbert Nasenbär",
+          "name": "Pupsterra",
+          "infos": "  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n                            invidunt\n                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo\n                            duo\n                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum\n                            dolor\n                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod\n                            tempor\n                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam\n                            et\n                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem\n                            ipsum dolor sit amet.",
+          "lightBadge": "Halbschatten",
+          "lightDescription": "Diese schöne Pflanze sollte im halbschatten stehen",
+          "waterBadge": "Erde nass",
+          "waterDescription": "Die Erde sollte ganz gut nass sein, glaub mir",
+          "moistBadge": "Feucht",
+          "moistDescription": "Halt deine Wohnung feucht"
+        },
+        {
+          "id": "3",
+          "alias": "Brrrrrrrr",
+          "name": "Blume",
+          "infos": "  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n                            invidunt\n                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo\n                            duo\n                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum\n                            dolor\n                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod\n                            tempor\n                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam\n                            et\n                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem\n                            ipsum dolor sit amet.",
+          "lightBadge": "Halbschatten",
+          "lightDescription": "Diese schöne Pflanze sollte im halbschatten stehen",
+          "waterBadge": "Erde nass",
+          "waterDescription": "Die Erde sollte ganz gut nass sein, glaub mir",
+          "moistBadge": "Feucht",
+          "moistDescription": "Halt deine Wohnung feucht"
+        },
+        {
+          "id": "4",
+          "alias": "Brrrrrrrr",
+          "name": "Blume",
+          "infos": "  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n                            invidunt\n                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo\n                            duo\n                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum\n                            dolor\n                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod\n                            tempor\n                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam\n                            et\n                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem\n                            ipsum dolor sit amet.",
+          "lightBadge": "Halbschatten",
+          "lightDescription": "Diese schöne Pflanze sollte im halbschatten stehen",
+          "waterBadge": "Erde nass",
+          "waterDescription": "Die Erde sollte ganz gut nass sein, glaub mir",
+          "moistBadge": "Feucht",
+          "moistDescription": "Halt deine Wohnung feucht"
+        },
+        {
+          "id": "5",
+          "alias": "Brrrrrrrr",
+          "name": "Blume",
+          "infos": "  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n                            invidunt\n                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo\n                            duo\n                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum\n                            dolor\n                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod\n                            tempor\n                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam\n                            et\n                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem\n                            ipsum dolor sit amet.",
+          "lightBadge": "Halbschatten",
+          "lightDescription": "Diese schöne Pflanze sollte im halbschatten stehen",
+          "waterBadge": "Erde nass",
+          "waterDescription": "Die Erde sollte ganz gut nass sein, glaub mir",
+          "moistBadge": "Feucht",
+          "moistDescription": "Halt deine Wohnung feucht"
+        },
+        {
+          "id": "6",
+          "alias": "Brrrrrrrr",
+          "name": "Blume",
+          "infos": "  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n                            invidunt\n                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo\n                            duo\n                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum\n                            dolor\n                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod\n                            tempor\n                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam\n                            et\n                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem\n                            ipsum dolor sit amet.",
+          "lightBadge": "Halbschatten",
+          "lightDescription": "Diese schöne Pflanze sollte im halbschatten stehen",
+          "waterBadge": "Erde nass",
+          "waterDescription": "Die Erde sollte ganz gut nass sein, glaub mir",
+          "moistBadge": "Feucht",
+          "moistDescription": "Halt deine Wohnung feucht"
+        },
+        {
+          "id": "7",
+          "alias": "Brrrrrrrr",
+          "name": "Blume",
+          "infos": "  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n                            invidunt\n                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo\n                            duo\n                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum\n                            dolor\n                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod\n                            tempor\n                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam\n                            et\n                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem\n                            ipsum dolor sit amet.",
+          "lightBadge": "Halbschatten",
+          "lightDescription": "Diese schöne Pflanze sollte im halbschatten stehen",
+          "waterBadge": "Erde nass",
+          "waterDescription": "Die Erde sollte ganz gut nass sein, glaub mir",
+          "moistBadge": "Feucht",
+          "moistDescription": "Halt deine Wohnung feucht"
+        },
+        {
+          "id": "8",
+          "alias": "Brrrrrrrr",
+          "name": "Blume",
+          "infos": "  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n                            invidunt\n                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo\n                            duo\n                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum\n                            dolor\n                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod\n                            tempor\n                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam\n                            et\n                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem\n                            ipsum dolor sit amet.",
+          "lightBadge": "Halbschatten",
+          "lightDescription": "Diese schöne Pflanze sollte im halbschatten stehen",
+          "waterBadge": "Erde nass",
+          "waterDescription": "Die Erde sollte ganz gut nass sein, glaub mir",
+          "moistBadge": "Feucht",
+          "moistDescription": "Halt deine Wohnung feucht"
+        },
+        {
+          "id": "9",
+          "alias": "Brrrrrrrr",
+          "name": "Blume",
+          "infos": "  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n                            invidunt\n                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo\n                            duo\n                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum\n                            dolor\n                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod\n                            tempor\n                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam\n                            et\n                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem\n                            ipsum dolor sit amet.",
+          "lightBadge": "Halbschatten",
+          "lightDescription": "Diese schöne Pflanze sollte im halbschatten stehen",
+          "waterBadge": "Erde nass",
+          "waterDescription": "Die Erde sollte ganz gut nass sein, glaub mir",
+          "moistBadge": "Feucht",
+          "moistDescription": "Halt deine Wohnung feucht"
+        }
+      ]
+    }
+  }
+}

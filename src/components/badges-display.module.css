@@ -1,0 +1,16 @@
+.badgeContainer {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    row-gap: 2px;
+    column-gap: 2px;
+}
+
+.badgeContainerVertical {
+    margin-top: 5px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    row-gap: 2px;
+    column-gap: 2px;
+}
