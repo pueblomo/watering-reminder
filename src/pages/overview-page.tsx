@@ -8,7 +8,7 @@ import PlantModal from "../components/plant-modal";
 import classes from "./overview-page.module.css";
 import {CirclePlus} from "tabler-icons-react";
 import {useParams} from "react-router-dom";
-import {backendUrl} from "../../global";
+import {backendUrl} from "../global";
 
 
 export default function OverviewPage() {

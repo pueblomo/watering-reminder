@@ -7,7 +7,7 @@ import classes from "./description-page.module.css"
 import {Plant} from "../models/Plant";
 import PlantModal from "../components/plant-modal";
 import useAxios from "axios-hooks";
-import {backendUrl} from "../../global";
+import {backendUrl} from "../global";
 
 interface descriptionProps {
     plant: Plant,
