@@ -123,6 +123,7 @@ export default function PlantModal({opened, onClose, plant, onSubmit}: modalProp
     return (
         <Modal opened={opened} onClose={onClose}>
             <form onSubmit={form.onSubmit((values) => {
+                plant = {...values, imageName: plant.imageName}
                 onSubmit({
                     ...values,
                     imageName: plant.imageName

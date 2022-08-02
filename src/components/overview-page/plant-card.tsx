@@ -12,10 +12,9 @@ import {backendUrl} from "../../global";
 interface plantCardProps {
     plant: Plant,
     click: MouseEventHandler,
-    reload: () => void
 }
 
-export default function PlantCard({plant, click, reload}: plantCardProps) {
+export default function PlantCard({plant, click}: plantCardProps) {
     const imageUrl = backendUrl + '/images/' + plant.imageName
     const [
         {data: putData, loading: putLoading, error: putError},
@@ -50,7 +49,6 @@ export default function PlantCard({plant, click, reload}: plantCardProps) {
                             const formData = new FormData()
                             formData.append("data", JSON.stringify(plant))
                             executePut({data: formData})
-                            reload()
                         }} variant="outline" color="teal" radius="lg"
                                 styles={(theme) => ({
                                     root: {

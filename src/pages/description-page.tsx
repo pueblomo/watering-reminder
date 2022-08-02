@@ -12,14 +12,14 @@ import {backendUrl} from "../global";
 interface descriptionProps {
     plant: Plant,
     click: MouseEventHandler,
-    refetch: any,
+    refetch: any
     showDescription: any
 }
 
 export default function DescriptionPage({plant, click, refetch, showDescription}: descriptionProps) {
     const [opened, setOpened] = useState(false);
     const [
-        {data: putData, loading: putLoading, error: putError},
+        {loading: putLoading},
         executePut
     ] = useAxios(
         {
@@ -32,19 +32,16 @@ export default function DescriptionPage({plant, click, refetch, showDescription}
     return (
         <div>
             <PlantModal opened={opened} onClose={() => setOpened(false)} plant={plant}
-                        onSubmit={(newPlant, file) => {
+                        onSubmit={async (newPlant, file) => {
                             const formData = new FormData();
                             if (file) {
                                 formData.append("image", file)
                             }
                             formData.append("data", JSON.stringify(newPlant))
-                            executePut({data: formData})
-                            showDescription(false)
+                            await executePut({data: formData})
                             if (!putLoading) {
-                                setTimeout(function () {
-                                    console.log("refetch")
-                                    refetch()
-                                }, 1000)
+                                showDescription(false)
+                                await refetch()
                             }
                         }}/>
             <div className={classes.actionIconContainer}>
