@@ -21,7 +21,7 @@ export default function OverviewPage() {
         }
     });
     const [
-        {data: postData, loading: postLoading, error: postError},
+        {loading: postLoading, error: postError},
         executePost
     ] = useAxios(
         {
@@ -34,6 +34,8 @@ export default function OverviewPage() {
     const [description, setDescription] = useState(<div/>)
     const [showDescription, setShowDescription] = useState(false)
     const [opened, setOpened] = useState(false);
+    if (postError) console.log(postError)
+    if (error) console.log(error)
 
     let content = <Center><Loader variant="dots"/></Center>
     let emptyPlant: Plant = {
@@ -89,14 +91,16 @@ export default function OverviewPage() {
             {loading && <Center><Loader variant="dots"/></Center>}
             {!loading && <div>
                 <PlantModal opened={opened} onClose={() => setOpened(false)} plant={emptyPlant}
-                            onSubmit={(plant, file) => {
+                            onSubmit={async (plant, file) => {
                                 const formData = new FormData();
                                 if (file) {
                                     formData.append("image", file)
                                 }
                                 formData.append("data", JSON.stringify(plant))
                                 executePost({data: formData})
-                                reload()
+                                if (!postLoading) {
+                                    await refetch()
+                                }
                             }
                             }/>
                 {!opened && <div className={classes.buttonContainer}>
@@ -108,7 +112,7 @@ export default function OverviewPage() {
                     return (
                         <div>
                             <PlantCard key={plant.id * 1000} plant={plant}
-                                       click={() => clickHandler(plant)} reload={reload}/>
+                                       click={() => clickHandler(plant)}/>
                             <Space key={index} h="xs"/>
                         </div>
                     )
@@ -123,16 +127,8 @@ export default function OverviewPage() {
 
     function clickHandler(plant: Plant) {
         setShowDescription(true);
-        setDescription(<DescriptionPage click={back} plant={plant} refetch={refetch}
-                                        showDescription={setShowDescription}/>)
-    }
-
-    function reload() {
-        if (!postLoading) {
-            setTimeout(function () {
-                refetch()
-            }, 1000)
-        }
+        setDescription(<DescriptionPage click={back} plant={plant}
+                                        showDescription={setShowDescription} refetch={refetch}/>)
     }
 
     if (!loading) {
