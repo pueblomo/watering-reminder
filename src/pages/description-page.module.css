@@ -3,3 +3,9 @@
     column-gap: 30px;
     justify-content: space-between;
 }
+
+.actionIconEdit {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}

@@ -9,6 +9,7 @@ import classes from "./overview-page.module.css";
 import {CirclePlus} from "tabler-icons-react";
 import {useParams} from "react-router-dom";
 import {backendUrl} from "../global";
+import {showNotification} from "@mantine/notifications";
 
 
 export default function OverviewPage() {
@@ -34,8 +35,7 @@ export default function OverviewPage() {
     const [description, setDescription] = useState(<div/>)
     const [showDescription, setShowDescription] = useState(false)
     const [opened, setOpened] = useState(false);
-    if (postError) console.log(postError)
-    if (error) console.log(error)
+    if (error) showNotification({message: 'Fehler beim Laden!', color: 'red'})
 
     let content = <Center><Loader variant="dots"/></Center>
     let emptyPlant: Plant = {
@@ -99,6 +99,7 @@ export default function OverviewPage() {
                                 formData.append("data", JSON.stringify(plant))
                                 executePost({data: formData})
                                 if (!postLoading) {
+                                    if(postError) showNotification({message: 'Fehler beim Laden!', color: 'red'})
                                     await refetch()
                                 }
                             }
