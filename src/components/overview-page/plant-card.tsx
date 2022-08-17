@@ -27,7 +27,9 @@ export default function PlantCard({plant, click}: plantCardProps) {
         {manual: true}
     )
 
-    const needWatering = moment().locale('de').diff(moment(plant.date).locale('de'), 'days') > plant.interval;
+    const needWatering = plant.interval
+        && plant.interval > 0
+        && moment().locale('de').diff(moment(plant.date).locale('de'), 'days') > plant.interval;
     const dynamicStyle = needWatering ? classes.needWatering : classes.container
 
     return (
