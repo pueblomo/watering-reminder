@@ -27,9 +27,12 @@ export default function PlantCard({plant, click}: plantCardProps) {
         {manual: true}
     )
 
+    const needWatering = moment().locale('de').diff(moment(plant.date).locale('de'), 'days') > plant.interval;
+    const dynamicStyle = needWatering ? classes.needWatering : classes.container
+
     return (
         <Paper withBorder shadow="md" radius="md" p="lg"
-               className={classes.container}>
+               className={`${dynamicStyle}`}>
             <Grid>
                 <Grid.Col span={2} onClick={click}>
                     <Avatar radius="md" size="lg" src={imageUrl}></Avatar>

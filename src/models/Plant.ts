@@ -11,5 +11,6 @@ export type Plant = {
     moistDescription: string,
     imageName: string,
     userName: string | undefined,
-    date: Date
+    date: Date,
+    interval: number
 }
