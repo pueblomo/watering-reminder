@@ -4,6 +4,7 @@ import {
     Group,
     MantineTheme,
     Modal,
+    NumberInput,
     Stack,
     Text,
     Textarea,
@@ -95,7 +96,8 @@ export default function PlantModal({opened, onClose, plant, onSubmit}: modalProp
             moistDescription: plant.moistDescription,
             imageName: plant.imageName,
             userName: plant.userName,
-            date: plant.date
+            date: plant.date,
+            interval: plant.interval
         }
     })
 
@@ -141,6 +143,10 @@ export default function PlantModal({opened, onClose, plant, onSubmit}: modalProp
                         required
                         label="Name"
                         {...form.getInputProps('name')}
+                    />
+                    <NumberInput
+                        label="Gießinterval in Tagen"
+                        {...form.getInputProps('interval')}
                     />
                     <Textarea
                         label="Infos"

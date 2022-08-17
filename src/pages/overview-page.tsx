@@ -51,7 +51,8 @@ export default function OverviewPage() {
         waterDescription: "",
         imageName: "",
         userName: user,
-        date: new Date()
+        date: new Date(),
+        interval: 0
     }
 
     let myDynamicManifest = {
@@ -99,7 +100,7 @@ export default function OverviewPage() {
                                 formData.append("data", JSON.stringify(plant))
                                 executePost({data: formData})
                                 if (!postLoading) {
-                                    if(postError) showNotification({message: 'Fehler beim Laden!', color: 'red'})
+                                    if (postError) showNotification({message: 'Fehler beim Laden!', color: 'red'})
                                     await refetch()
                                 }
                             }
